@@ -1,0 +1,677 @@
+<roblox xmlns:xmime="http://www.w3.org/2005/05/xmlmime" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.roblox.com/roblox.xsd" version="4">
+	<External>null</External>
+	<External>nil</External>
+	<Item class="Workspace" referent="RBX0335BCE572024024A3474F957C4C5E87">
+		<Properties>
+			<bool name="AllowThirdPartySales">false</bool>
+			<Ref name="CurrentCamera">RBX52C5E13E3EF144F4B0BD8CE6598715FE</Ref>
+			<double name="DistributedGameTime">0</double>
+			<bool name="ExpSolverEnabled_Replicate">true</bool>
+			<float name="FallenPartsDestroyHeight">-500</float>
+			<bool name="FilteringEnabled">false</bool>
+			<float name="Gravity">196.199997</float>
+			<CoordinateFrame name="ModelInPrimary">
+				<X>0</X>
+				<Y>0</Y>
+				<Z>0</Z>
+				<R00>1</R00>
+				<R01>0</R01>
+				<R02>0</R02>
+				<R10>0</R10>
+				<R11>1</R11>
+				<R12>0</R12>
+				<R20>0</R20>
+				<R21>0</R21>
+				<R22>1</R22>
+			</CoordinateFrame>
+			<string name="Name">Workspace</string>
+			<bool name="PGSPhysicsSolverEnabled">true</bool>
+			<Ref name="PrimaryPart">null</Ref>
+			<bool name="StreamingEnabled">false</bool>
+		</Properties>
+		<Item class="Camera" referent="RBX52C5E13E3EF144F4B0BD8CE6598715FE">
+			<Properties>
+				<CoordinateFrame name="CFrame">
+					<X>15.7017612</X>
+					<Y>29.5619888</Y>
+					<Z>33.0670929</Z>
+					<R00>-0.3354626</R00>
+					<R01>-0.483779103</R01>
+					<R02>0.808345675</R02>
+					<R10>-0</R10>
+					<R11>0.858067691</R11>
+					<R12>0.513536692</R12>
+					<R20>-0.942053616</R20>
+					<R21>0.172272354</R21>
+					<R22>-0.287849575</R22>
+				</CoordinateFrame>
+				<Ref name="CameraSubject">null</Ref>
+				<token name="CameraType">0</token>
+				<float name="FieldOfView">70</float>
+				<CoordinateFrame name="Focus">
+					<X>14.0850706</X>
+					<Y>28.5349159</Y>
+					<Z>33.6427917</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="HeadLocked">true</bool>
+				<float name="HeadScale">1</float>
+				<string name="Name">Camera</string>
+			</Properties>
+		</Item>
+		<Item class="Terrain" referent="RBXD394684C6CAA4AE095B4AB04EEB09D58">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">194</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.300000012</float>
+				<float name="Friction">0.5</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Terrain</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<BinaryString name="SmoothGrid">AQU=</BinaryString>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<Color3 name="WaterColor">4278998108</Color3>
+				<float name="WaterReflectance">1</float>
+				<float name="WaterTransparency">0.300000012</float>
+				<float name="WaterWaveSize">0.150000006</float>
+				<float name="WaterWaveSpeed">10</float>
+				<Vector3 name="size">
+					<X>2044</X>
+					<Y>252</Y>
+					<Z>2044</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+		<Item class="Part" referent="RBX6B626BB5516C47C7BBABA26FA34398EF">
+			<Properties>
+				<bool name="Anchored">true</bool>
+				<float name="BackParamA">-0.5</float>
+				<float name="BackParamB">0.5</float>
+				<token name="BackSurface">0</token>
+				<token name="BackSurfaceInput">0</token>
+				<float name="BottomParamA">-0.5</float>
+				<float name="BottomParamB">0.5</float>
+				<token name="BottomSurface">4</token>
+				<token name="BottomSurfaceInput">0</token>
+				<int name="BrickColor">199</int>
+				<CoordinateFrame name="CFrame">
+					<X>0</X>
+					<Y>-10</Y>
+					<Z>0</Z>
+					<R00>1</R00>
+					<R01>0</R01>
+					<R02>0</R02>
+					<R10>0</R10>
+					<R11>1</R11>
+					<R12>0</R12>
+					<R20>0</R20>
+					<R21>0</R21>
+					<R22>1</R22>
+				</CoordinateFrame>
+				<bool name="CanCollide">true</bool>
+				<PhysicalProperties name="CustomPhysicalProperties">
+					<CustomPhysics>false</CustomPhysics>
+				</PhysicalProperties>
+				<float name="Elasticity">0.5</float>
+				<float name="Friction">0.300000012</float>
+				<float name="FrontParamA">-0.5</float>
+				<float name="FrontParamB">0.5</float>
+				<token name="FrontSurface">0</token>
+				<token name="FrontSurfaceInput">0</token>
+				<float name="LeftParamA">-0.5</float>
+				<float name="LeftParamB">0.5</float>
+				<token name="LeftSurface">0</token>
+				<token name="LeftSurfaceInput">0</token>
+				<bool name="Locked">true</bool>
+				<token name="Material">256</token>
+				<string name="Name">Baseplate</string>
+				<float name="Reflectance">0</float>
+				<float name="RightParamA">-0.5</float>
+				<float name="RightParamB">0.5</float>
+				<token name="RightSurface">0</token>
+				<token name="RightSurfaceInput">0</token>
+				<Vector3 name="RotVelocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<float name="TopParamA">-0.5</float>
+				<float name="TopParamB">0.5</float>
+				<token name="TopSurface">3</token>
+				<token name="TopSurfaceInput">0</token>
+				<float name="Transparency">0</float>
+				<Vector3 name="Velocity">
+					<X>0</X>
+					<Y>0</Y>
+					<Z>0</Z>
+				</Vector3>
+				<token name="formFactorRaw">0</token>
+				<token name="shape">1</token>
+				<Vector3 name="size">
+					<X>512</X>
+					<Y>20</Y>
+					<Z>512</Z>
+				</Vector3>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="SoundService" referent="RBX7FC09FC1A34A45B193DAD62FEDFE7A2C">
+		<Properties>
+			<token name="AmbientReverb">0</token>
+			<float name="DistanceFactor">3.32999992</float>
+			<float name="DopplerScale">1</float>
+			<string name="Name">Soundscape</string>
+			<float name="RolloffScale">1</float>
+		</Properties>
+	</Item>
+	<Item class="NonReplicatedCSGDictionaryService" referent="RBX5E36BA650C6B4BAA81AF874D9A0AC245">
+		<Properties>
+			<string name="Name">NonReplicatedCSGDictionaryService</string>
+		</Properties>
+	</Item>
+	<Item class="CSGDictionaryService" referent="RBX1658F72104FC4119BB0B2EB2F494FACD">
+		<Properties>
+			<string name="Name">CSGDictionaryService</string>
+		</Properties>
+	</Item>
+	<Item class="Chat" referent="RBX1E2F11787ED647B6A85B25D1A4C4AF36">
+		<Properties>
+			<bool name="LoadDefaultChat">true</bool>
+			<string name="Name">Chat</string>
+		</Properties>
+	</Item>
+	<Item class="Players" referent="RBXA0727D2517AC402A815FB351B0F46FB4">
+		<Properties>
+			<bool name="CharacterAutoLoads">true</bool>
+			<int name="MaxPlayersInternal">12</int>
+			<string name="Name">Players</string>
+			<int name="PreferredPlayersInternal">56832</int>
+		</Properties>
+	</Item>
+	<Item class="ReplicatedFirst" referent="RBX5DCFD2180FB3483B91E5C1B85D191462">
+		<Properties>
+			<string name="Name">ReplicatedFirst</string>
+		</Properties>
+	</Item>
+	<Item class="StarterPlayer" referent="RBX3E6B945975864F06A6561956332721A0">
+		<Properties>
+			<bool name="AutoJumpEnabled">true</bool>
+			<float name="CameraMaxZoomDistance">400</float>
+			<float name="CameraMinZoomDistance">0.5</float>
+			<token name="CameraMode">0</token>
+			<token name="DevCameraOcclusionMode">0</token>
+			<token name="DevComputerCameraMovementMode">0</token>
+			<token name="DevComputerMovementMode">0</token>
+			<token name="DevTouchCameraMovementMode">0</token>
+			<token name="DevTouchMovementMode">0</token>
+			<bool name="EnableMouseLockOption">true</bool>
+			<float name="HealthDisplayDistance">100</float>
+			<bool name="LoadCharacterAppearance">true</bool>
+			<string name="Name">StarterPlayer</string>
+			<float name="NameDisplayDistance">100</float>
+		</Properties>
+		<Item class="StarterPlayerScripts" referent="RBX842513858D634AFBAE3E44AD9D8AB7E3">
+			<Properties>
+				<string name="Name">StarterPlayerScripts</string>
+			</Properties>
+			<Item class="LocalScript" referent="RBXFFFFEFC073634956823DDA838DDC8629">
+				<Properties>
+					<bool name="Disabled">false</bool>
+					<Content name="LinkedSource"><null></null></Content>
+					<string name="Name">TestClient</string>
+					<string name="ScriptGuid">{8A976E32-BA7D-42B9-8C0D-922E44A13A1E}</string>
+					<ProtectedString name="Source"><![CDATA[local test = require(game.ReplicatedStorage:WaitForChild("RbxRPC")).getClientApi(require(game.ReplicatedStorage:WaitForChild("TestCommon")))
+
+print("client loaded: ", test.foo(4), test.bar(5), test.baz(6))
+]]></ProtectedString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StarterCharacterScripts" referent="RBXCF72AFBA2CFD421F966A858535E98E84">
+			<Properties>
+				<string name="Name">StarterCharacterScripts</string>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="StarterPack" referent="RBX88990F3C80C349A9B503BD225F386B10">
+		<Properties>
+			<string name="Name">StarterPack</string>
+		</Properties>
+	</Item>
+	<Item class="StarterGui" referent="RBX00B2BFB84E1546B4AECC0B2AAE7305ED">
+		<Properties>
+			<string name="Name">StarterGui</string>
+			<bool name="ResetPlayerGuiOnSpawn">true</bool>
+			<bool name="ShowDevelopmentGui">true</bool>
+		</Properties>
+	</Item>
+	<Item class="TeleportService" referent="RBX8C7012A3CCFC4BBAB4E083B95722CAEC">
+		<Properties>
+			<string name="Name">Teleport Service</string>
+		</Properties>
+	</Item>
+	<Item class="CollectionService" referent="RBX858ADB0CA948412F87A0F99BBBD50DD0">
+		<Properties>
+			<string name="Name">CollectionService</string>
+		</Properties>
+	</Item>
+	<Item class="PhysicsService" referent="RBX1C36FCF42DD44483A273BF6534A176B3">
+		<Properties>
+			<string name="Name">PhysicsService</string>
+		</Properties>
+	</Item>
+	<Item class="Geometry" referent="RBXC0908A48F2C94CED85CC762721953572">
+		<Properties>
+			<string name="Name">Geometry</string>
+		</Properties>
+	</Item>
+	<Item class="RenderHooksService" referent="RBXF8475A239F8E4178B9ACEC2BF3D32944">
+		<Properties>
+			<string name="Name">RenderHooksService</string>
+		</Properties>
+	</Item>
+	<Item class="InsertService" referent="RBXD4BC8C7368D04CB18BBA6E20B17B61F3">
+		<Properties>
+			<bool name="AllowClientInsertModels">false</bool>
+			<bool name="AllowInsertFreeModels">false</bool>
+			<string name="Name">InsertService</string>
+		</Properties>
+	</Item>
+	<Item class="GamePassService" referent="RBXD50DCF6F263A40F2B5B5F1970A8B9512">
+		<Properties>
+			<string name="Name">GamePassService</string>
+		</Properties>
+	</Item>
+	<Item class="Debris" referent="RBX3498EC3C3316463CB6E27B040A38672F">
+		<Properties>
+			<int name="MaxItems">1000</int>
+			<string name="Name">Debris</string>
+		</Properties>
+	</Item>
+	<Item class="TimerService" referent="RBX3E65D11377784A5CB6CDA36B9541A4DC">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="CookiesService" referent="RBXC9FFD5BD2A1845D7BFE06EA2958BA4CB">
+		<Properties>
+			<string name="Name">CookiesService</string>
+		</Properties>
+	</Item>
+	<Item class="VRService" referent="RBX7DD89E4E916B460EAF3193AD02011336">
+		<Properties>
+			<string name="Name">VRService</string>
+		</Properties>
+	</Item>
+	<Item class="ContextActionService" referent="RBX676F85A75E5C49C4BCF6AE5C30D89008">
+		<Properties>
+			<string name="Name">ContextActionService</string>
+		</Properties>
+	</Item>
+	<Item class="ScriptService" referent="RBX88E81C6C52A94F71B269B29BC435358B">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="AssetService" referent="RBX2279921DB2EC40CA8BF3D991E211385B">
+		<Properties>
+			<string name="Name">AssetService</string>
+		</Properties>
+	</Item>
+	<Item class="TouchInputService" referent="RBX4539780F95EE44BAB814CBF055110B03">
+		<Properties>
+			<string name="Name">TouchInputService</string>
+		</Properties>
+	</Item>
+	<Item class="Selection" referent="RBX9B32F4981ACF4B4586946A49318BE117">
+		<Properties>
+			<string name="Name">Selection</string>
+		</Properties>
+	</Item>
+	<Item class="ServerScriptService" referent="RBX19E4766AD60B4E738FB92F14E69D5641">
+		<Properties>
+			<bool name="LoadStringEnabled">false</bool>
+			<string name="Name">ServerScriptService</string>
+		</Properties>
+		<Item class="Script" referent="RBXB6321075C4A949CD86FD13960C6EA3E9">
+			<Properties>
+				<bool name="Disabled">false</bool>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">TestServer</string>
+				<string name="ScriptGuid">{C345E9CD-1024-4ABE-B3F9-01B5DE85BC58}</string>
+				<ProtectedString name="Source"><![CDATA[local test = require(game.ReplicatedStorage:WaitForChild("RbxRPC")).getServerApi(require(game.ReplicatedStorage:WaitForChild("TestCommon")))
+
+print("server loaded: ", test.bar(7), test.baz(8))
+
+local onJoin
+onJoin = function()
+	for i, v in ipairs(game.Players:GetChildren()) do
+		print("Server calling foo: ", test.foo(v, 9))
+	end
+	delay(1, onJoin)
+end
+spawn(onJoin)]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="ServerStorage" referent="RBXE1735EDD106A4E08AE1B89E4296376EB">
+		<Properties>
+			<string name="Name">ServerStorage</string>
+		</Properties>
+	</Item>
+	<Item class="ReplicatedStorage" referent="RBXF813500BA6D24E79A3A3858A3309F0EE">
+		<Properties>
+			<string name="Name">ReplicatedStorage</string>
+		</Properties>
+		<Item class="ModuleScript" referent="RBXE88356EC0D684E61B605B3E35DEAE882">
+			<Properties>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">RbxRPC</string>
+				<string name="ScriptGuid">{5149372A-CB23-4096-80C6-B9ED6CFE937E}</string>
+				<ProtectedString name="Source"><![CDATA[--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+-- Roblox RPC (RbxRPC)
+-- Made by iconmaster
+-- This project is open-source. See the GitHub repository iconmaster5326/RbxRPC for details.
+-- 
+-- In short:
+-- RbxRPC is a library that makes and calls RemoteEvents automatically, so you don't have to.
+-- 
+-- In long:
+-- RbxRPC is an API for the easy contruction of remote procedure calls (RPCs); that is, make
+-- functions cross the client/server boundary without the end user needing to make the transmissions of
+-- data themselves. In ROBLOX, data can be transmitted through RemoteFunction objects; RbxRPC allows you
+-- to automatically generate versions of your codebase that use RemoteFunctions when they need to cross
+-- the client-server boundary, without creating a single RemoteFunction yourself.
+-- 
+-- How To Use:
+-- For now, see the example project, located in the GitHub repository.
+--------------------------------------------------------------------------------------------------------
+--------------------------------------------------------------------------------------------------------
+
+local rpc = {}
+
+local function mergeTables(a, b)
+	if not a then return b end
+	if not b then return a end
+	
+	for i,v in pairs(b) do
+		if a[i] == nil then
+			a[i] = v
+		else
+			a[i] = mergeTables(a[i], v)
+		end
+	end
+	
+	return a
+end
+
+local function serverCreateServer(api, folder, newTable)
+	newTable = newTable or {}
+	
+	for i, v in pairs(api) do
+		if typeof(v) == "function" then
+			local event = folder:FindFirstChild(i)
+			if not event then
+				event = Instance.new("RemoteFunction")
+				event.Name = i
+				event.Parent = folder
+			end
+			event.OnServerInvoke = v
+			
+			newTable[i] = function(...)
+				return v(nil, ...)
+			end
+		elseif typeof(v) == "table" then
+			local newFolder = folder:FindFirstChild(i)
+			if not newFolder then
+				newFolder = Instance.new("Folder")
+				newFolder.Name = i
+				newFolder.Parent = folder
+			end
+			
+			newTable[i] = mergeTables(newTable[i], serverCreateServer(v, newFolder))
+		end
+	end
+	
+	return newTable
+end
+
+local function serverCreateClient(api, folder, newTable)
+	newTable = newTable or {}
+	
+	for i, v in pairs(api) do
+		if typeof(v) == "function" then
+			local event = folder:FindFirstChild(i)
+			if not event then
+				event = Instance.new("RemoteFunction")
+				event.Name = i
+				event.Parent = folder
+			end
+			
+			newTable[i] = function(...)
+				return event:InvokeClient(...)
+			end
+		elseif typeof(v) == "table" then
+			local newFolder = folder:FindFirstChild(i)
+			if not newFolder then
+				newFolder = Instance.new("Folder")
+				newFolder.Name = i
+				newFolder.Parent = folder
+			end
+			
+			newTable[i] = mergeTables(newTable[i], serverCreateClient(v, newFolder))
+		end
+	end
+	
+	return newTable
+end
+
+local function clientCreateServer(api, folder, newTable)
+	newTable = newTable or {}
+	
+	for i, v in pairs(api) do
+		if typeof(v) == "function" then
+			local event = folder:WaitForChild(i)
+			
+			newTable[i] = function(...)
+				return event:InvokeServer(...)
+			end
+		elseif typeof(v) == "table" then
+			local newFolder = folder:WaitForChild(i)
+			
+			newTable[i] = mergeTables(newTable[i], clientCreateServer(v, newFolder))
+		end
+	end
+	
+	return newTable
+end
+
+local function clientCreateClient(api, folder, newTable)
+	newTable = newTable or {}
+	
+	for i, v in pairs(api) do
+		if typeof(v) == "function" then
+			local event = folder:WaitForChild(i)
+			event.OnClientInvoke = v
+			
+			newTable[i] = v
+		elseif typeof(v) == "table" then
+			local newFolder = folder:WaitForChild(i)
+			
+			newTable[i] = mergeTables(newTable[i], clientCreateClient(v, newFolder))
+		end
+	end
+	
+	return newTable
+end
+
+function rpc.getClientApi(apiFunc)
+	local api = {}
+	local rawApi = apiFunc(api)
+	
+	-- find the API folder
+	local apiFolder = script:WaitForChild(rawApi.name)
+	
+	-- populate the table
+	api = clientCreateServer(rawApi.server, apiFolder, api)
+	api = clientCreateClient(rawApi.client, apiFolder, api)
+	
+	api = mergeTables(api, rawApi.common)
+	return api
+end
+
+function rpc.getServerApi(apiFunc)
+	local api = {}
+	local rawApi = apiFunc(api)
+	
+	-- find the API folder
+	local apiFolder = script:FindFirstChild(rawApi.name)
+	if not apiFolder then
+		-- create the folder containing the API events if need be
+		apiFolder = Instance.new("Folder")
+		apiFolder.Name = rawApi.name
+		apiFolder.Parent = script
+	end
+	
+	-- populate the table
+	api = serverCreateServer(rawApi.server, apiFolder, api)
+	api = serverCreateClient(rawApi.client, apiFolder, api)
+	
+	api = mergeTables(api, rawApi.common)
+	return api
+end
+
+return rpc
+]]></ProtectedString>
+			</Properties>
+		</Item>
+		<Item class="ModuleScript" referent="RBX19F4629FFBBC4C83BC5CE874D733D65C">
+			<Properties>
+				<Content name="LinkedSource"><null></null></Content>
+				<string name="Name">TestCommon</string>
+				<string name="ScriptGuid">{1E2ED3A5-5ADF-4D77-831F-EBD9137E5EC0}</string>
+				<ProtectedString name="Source"><![CDATA[return function(api)
+	local client = {}
+	local server = {}
+	local common = {}
+	
+	function client.foo(x)
+		print("CLIENT: foo called from server with", x)
+		return api.bar(10)
+	end
+	
+	function server.bar(caller, x)
+		print("SERVER: bar called from", caller, "with", x)
+		return 2
+	end
+	
+	function common.baz()
+		return 3
+	end
+	
+	return {
+		name = "Testerino", 
+		client = client, 
+		server = server, 
+		common = common,
+	}
+end]]></ProtectedString>
+			</Properties>
+		</Item>
+	</Item>
+	<Item class="LuaWebService" referent="RBXBDE15BBC0BE9488D955163ED9F244032">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
+	<Item class="HttpService" referent="RBXF303E678C325459EBED0ADBB96A1177B">
+		<Properties>
+			<bool name="HttpEnabled">false</bool>
+			<string name="Name">HttpService</string>
+		</Properties>
+	</Item>
+	<Item class="Lighting" referent="RBX12318D53E77B45EEA9590D6CC6C73B08">
+		<Properties>
+			<Color3 name="Ambient">4278190080</Color3>
+			<float name="Brightness">1</float>
+			<Color3 name="ColorShift_Bottom">4278190080</Color3>
+			<Color3 name="ColorShift_Top">4278190080</Color3>
+			<Color3 name="FogColor">4290822336</Color3>
+			<float name="FogEnd">100000</float>
+			<float name="FogStart">0</float>
+			<float name="GeographicLatitude">41.7332993</float>
+			<bool name="GlobalShadows">true</bool>
+			<string name="Name">Lighting</string>
+			<Color3 name="OutdoorAmbient">4286611584</Color3>
+			<bool name="Outlines">true</bool>
+			<string name="TimeOfDay">14:00:00</string>
+		</Properties>
+	</Item>
+	<Item class="GamepadService" referent="RBX3ED446709E0247C690402B8C0A8BAB8C">
+		<Properties>
+			<string name="Name">GamepadService</string>
+		</Properties>
+	</Item>
+</roblox>
