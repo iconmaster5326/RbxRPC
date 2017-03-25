@@ -32,26 +32,26 @@
 		<Item class="Camera" referent="RBX52C5E13E3EF144F4B0BD8CE6598715FE">
 			<Properties>
 				<CoordinateFrame name="CFrame">
-					<X>15.7017612</X>
-					<Y>29.5619888</Y>
-					<Z>33.0670929</Z>
-					<R00>-0.3354626</R00>
-					<R01>-0.483779103</R01>
-					<R02>0.808345675</R02>
+					<X>3.62434936</X>
+					<Y>21.8498192</Y>
+					<Z>37.520771</Z>
+					<R00>-0.255448103</R00>
+					<R01>-0.492150366</R01>
+					<R02>0.83218646</R02>
 					<R10>-0</R10>
-					<R11>0.858067691</R11>
-					<R12>0.513536692</R12>
-					<R20>-0.942053616</R20>
-					<R21>0.172272354</R21>
-					<R22>-0.287849575</R22>
+					<R11>0.860743523</R11>
+					<R12>0.509038866</R12>
+					<R20>-0.966822743</R20>
+					<R21>0.130033016</R21>
+					<R22>-0.219875306</R22>
 				</CoordinateFrame>
 				<Ref name="CameraSubject">null</Ref>
 				<token name="CameraType">0</token>
 				<float name="FieldOfView">70</float>
 				<CoordinateFrame name="Focus">
-					<X>14.0850706</X>
-					<Y>28.5349159</Y>
-					<Z>33.6427917</Z>
+					<X>1.9599762</X>
+					<Y>20.8317413</Y>
+					<Z>37.9605217</Z>
 					<R00>1</R00>
 					<R01>0</R01>
 					<R02>0</R02>
@@ -435,10 +435,10 @@ spawn(onJoin)]]></ProtectedString>
 -- Made by iconmaster
 -- This project is open-source. See the GitHub repository iconmaster5326/RbxRPC for details.
 -- 
--- In short:
+-- In Short:
 -- RbxRPC is a library that makes and calls RemoteEvents automatically, so you don't have to.
 -- 
--- In long:
+-- In Long:
 -- RbxRPC is an API for the easy contruction of remote procedure calls (RPCs); that is, make
 -- functions cross the client/server boundary without the end user needing to make the transmissions of
 -- data themselves. In ROBLOX, data can be transmitted through RemoteFunction objects; RbxRPC allows you
@@ -446,7 +446,31 @@ spawn(onJoin)]]></ProtectedString>
 -- the client-server boundary, without creating a single RemoteFunction yourself.
 -- 
 -- How To Use:
--- For now, see the example project, located in the GitHub repository.
+-- For more in-depth information, including a tutorial, check out the GitHub repository.
+-- 
+-- This ModuleScript exposes two functions, getClientApi and getServerApi. They both take one argument,
+-- apiFunc, which is a function that must return a table. It will call this function, passing in one
+-- parameter, which is the table that is about to be populated with the translated API. The table
+-- returned by apiFunc is a map, with string keys and values as follows:
+--
+-- "name" - A unique identifier for the API you're making.
+-- "client" - A table, like the kind you would return from a ModuleScript, of client-side functions.
+-- "server" - A table, like the kind you would return from a ModuleScript, of server-side functions.
+-- Note that you are passed in an extra argument in the front, which is the client who called the
+-- function, or nil if it was called from the server.
+-- "common" - A table, like the kind you would return from a ModuleScript, of functions that do not need
+-- to be handled specially by RbxRPC.
+-- 
+-- Note that the client, server, and common tables can have sub-tables; they will be merged together
+-- as you would expect.
+-- 
+-- getClientApi returns the API, merged together, that should be used only by clients. getServerApi does
+-- the same thing for the server-side code. So now, after calling the correct get*Api function, you can
+-- call functions from both the client and server side without issue.
+-- 
+-- Why does apiFunc get passed in a parameter? This allows you to call other functions in your API
+-- while taking advantage of RbxRPC. In your apiFunc, ALWAYS index the parameter to call other
+-- functions in your API, and NEVER call them through the tables you're about to return!
 --------------------------------------------------------------------------------------------------------
 --------------------------------------------------------------------------------------------------------
 
@@ -669,7 +693,7 @@ end]]></ProtectedString>
 			<string name="TimeOfDay">14:00:00</string>
 		</Properties>
 	</Item>
-	<Item class="GamepadService" referent="RBX3ED446709E0247C690402B8C0A8BAB8C">
+	<Item class="GamepadService" referent="RBX1B7475CD4E0A4893871B7CE2E03D7275">
 		<Properties>
 			<string name="Name">GamepadService</string>
 		</Properties>
