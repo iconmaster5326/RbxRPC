@@ -45,6 +45,9 @@
 
 local rpc = {}
 
+local clientCache = {}
+local serverCache = {}
+
 local function mergeTables(a, b)
 	if not a then return b end
 	if not b then return a end
@@ -161,6 +164,11 @@ local function clientCreateClient(api, folder, newTable)
 end
 
 function rpc.getClientApi(apiFunc)
+	local cached = clientCache[apiFunc]
+	if cached then
+		return cached
+	end
+	
 	local api = {}
 	local rawApi = apiFunc(api)
 	
@@ -172,10 +180,16 @@ function rpc.getClientApi(apiFunc)
 	api = clientCreateClient(rawApi.client, apiFolder, api)
 	
 	api = mergeTables(api, rawApi.common)
+	clientCache[apiFunc] = api
 	return api
 end
 
 function rpc.getServerApi(apiFunc)
+	local cached = serverCache[apiFunc]
+	if cached then
+		return cached
+	end
+	
 	local api = {}
 	local rawApi = apiFunc(api)
 	
@@ -193,6 +207,7 @@ function rpc.getServerApi(apiFunc)
 	api = serverCreateClient(rawApi.client, apiFolder, api)
 	
 	api = mergeTables(api, rawApi.common)
+	serverCache[apiFunc] = api
 	return api
 end
 

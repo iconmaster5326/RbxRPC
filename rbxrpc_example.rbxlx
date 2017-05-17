@@ -4,6 +4,7 @@
 	<Item class="Workspace" referent="RBX0335BCE572024024A3474F957C4C5E87">
 		<Properties>
 			<bool name="AllowThirdPartySales">false</bool>
+			<string name="CollisionGroups">Default^0^1</string>
 			<Ref name="CurrentCamera">RBX52C5E13E3EF144F4B0BD8CE6598715FE</Ref>
 			<double name="DistributedGameTime">0</double>
 			<bool name="ExpSolverEnabled_Replicate">true</bool>
@@ -94,6 +95,8 @@
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
 				<PhysicalProperties name="CustomPhysicalProperties">
 					<CustomPhysics>false</CustomPhysics>
 				</PhysicalProperties>
@@ -170,6 +173,8 @@
 					<R22>1</R22>
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
+				<int name="CollisionGroupId">0</int>
+				<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
 				<PhysicalProperties name="CustomPhysicalProperties">
 					<CustomPhysics>false</CustomPhysics>
 				</PhysicalProperties>
@@ -241,6 +246,11 @@
 			<string name="Name">Chat</string>
 		</Properties>
 	</Item>
+	<Item class="TimerService" referent="RBX3E65D11377784A5CB6CDA36B9541A4DC">
+		<Properties>
+			<string name="Name">Instance</string>
+		</Properties>
+	</Item>
 	<Item class="Players" referent="RBXA0727D2517AC402A815FB351B0F46FB4">
 		<Properties>
 			<bool name="CharacterAutoLoads">true</bool>
@@ -252,6 +262,11 @@
 	<Item class="ReplicatedFirst" referent="RBX5DCFD2180FB3483B91E5C1B85D191462">
 		<Properties>
 			<string name="Name">ReplicatedFirst</string>
+		</Properties>
+	</Item>
+	<Item class="TweenService" referent="RBXEF328D1504824A8283CB8B7EC338DC72">
+		<Properties>
+			<string name="Name">TweenService</string>
 		</Properties>
 	</Item>
 	<Item class="StarterPlayer" referent="RBX3E6B945975864F06A6561956332721A0">
@@ -303,6 +318,7 @@ print("client loaded: ", test.foo(4), test.bar(5), test.baz(6))
 		<Properties>
 			<string name="Name">StarterGui</string>
 			<bool name="ResetPlayerGuiOnSpawn">true</bool>
+			<token name="ScreenOrientation">2</token>
 			<bool name="ShowDevelopmentGui">true</bool>
 		</Properties>
 	</Item>
@@ -347,11 +363,6 @@ print("client loaded: ", test.foo(4), test.bar(5), test.baz(6))
 		<Properties>
 			<int name="MaxItems">1000</int>
 			<string name="Name">Debris</string>
-		</Properties>
-	</Item>
-	<Item class="TimerService" referent="RBX3E65D11377784A5CB6CDA36B9541A4DC">
-		<Properties>
-			<string name="Name">Instance</string>
 		</Properties>
 	</Item>
 	<Item class="CookiesService" referent="RBXC9FFD5BD2A1845D7BFE06EA2958BA4CB">
@@ -476,6 +487,9 @@ spawn(onJoin)]]></ProtectedString>
 
 local rpc = {}
 
+local clientCache = {}
+local serverCache = {}
+
 local function mergeTables(a, b)
 	if not a then return b end
 	if not b then return a end
@@ -592,6 +606,11 @@ local function clientCreateClient(api, folder, newTable)
 end
 
 function rpc.getClientApi(apiFunc)
+	local cached = clientCache[apiFunc]
+	if cached then
+		return cached
+	end
+	
 	local api = {}
 	local rawApi = apiFunc(api)
 	
@@ -603,10 +622,16 @@ function rpc.getClientApi(apiFunc)
 	api = clientCreateClient(rawApi.client, apiFolder, api)
 	
 	api = mergeTables(api, rawApi.common)
+	clientCache[apiFunc] = api
 	return api
 end
 
 function rpc.getServerApi(apiFunc)
+	local cached = serverCache[apiFunc]
+	if cached then
+		return cached
+	end
+	
 	local api = {}
 	local rawApi = apiFunc(api)
 	
@@ -624,6 +649,7 @@ function rpc.getServerApi(apiFunc)
 	api = serverCreateClient(rawApi.client, apiFolder, api)
 	
 	api = mergeTables(api, rawApi.common)
+	serverCache[apiFunc] = api
 	return api
 end
 
@@ -693,7 +719,7 @@ end]]></ProtectedString>
 			<string name="TimeOfDay">14:00:00</string>
 		</Properties>
 	</Item>
-	<Item class="GamepadService" referent="RBX1B7475CD4E0A4893871B7CE2E03D7275">
+	<Item class="GamepadService" referent="RBX603739D971F14591B5C205B74FB88A8B">
 		<Properties>
 			<string name="Name">GamepadService</string>
 		</Properties>
