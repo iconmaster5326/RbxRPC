@@ -29,6 +29,7 @@
 			<bool name="PGSPhysicsSolverEnabled">true</bool>
 			<Ref name="PrimaryPart">null</Ref>
 			<bool name="StreamingEnabled">false</bool>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 		<Item class="Camera" referent="RBX52C5E13E3EF144F4B0BD8CE6598715FE">
 			<Properties>
@@ -66,6 +67,7 @@
 				<bool name="HeadLocked">true</bool>
 				<float name="HeadScale">1</float>
 				<string name="Name">Camera</string>
+				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
 		<Item class="Terrain" referent="RBXD394684C6CAA4AE095B4AB04EEB09D58">
@@ -79,7 +81,6 @@
 				<float name="BottomParamB">0.5</float>
 				<token name="BottomSurface">4</token>
 				<token name="BottomSurfaceInput">0</token>
-				<int name="BrickColor">194</int>
 				<CoordinateFrame name="CFrame">
 					<X>0</X>
 					<Y>0</Y>
@@ -96,7 +97,7 @@
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
 				<int name="CollisionGroupId">0</int>
-				<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
+				<Color3uint8 name="Color3uint8">4288914085</Color3uint8>
 				<PhysicalProperties name="CustomPhysicalProperties">
 					<CustomPhysics>false</CustomPhysics>
 				</PhysicalProperties>
@@ -124,6 +125,7 @@
 					<Z>0</Z>
 				</Vector3>
 				<BinaryString name="SmoothGrid">AQU=</BinaryString>
+				<BinaryString name="Tags"></BinaryString>
 				<float name="TopParamA">-0.5</float>
 				<float name="TopParamB">0.5</float>
 				<token name="TopSurface">3</token>
@@ -157,7 +159,6 @@
 				<float name="BottomParamB">0.5</float>
 				<token name="BottomSurface">4</token>
 				<token name="BottomSurfaceInput">0</token>
-				<int name="BrickColor">199</int>
 				<CoordinateFrame name="CFrame">
 					<X>0</X>
 					<Y>-10</Y>
@@ -174,7 +175,7 @@
 				</CoordinateFrame>
 				<bool name="CanCollide">true</bool>
 				<int name="CollisionGroupId">0</int>
-				<Color3uint8 name="Color3uint8Internal">4288914085</Color3uint8>
+				<Color3uint8 name="Color3uint8">4284702562</Color3uint8>
 				<PhysicalProperties name="CustomPhysicalProperties">
 					<CustomPhysics>false</CustomPhysics>
 				</PhysicalProperties>
@@ -201,6 +202,7 @@
 					<Y>0</Y>
 					<Z>0</Z>
 				</Vector3>
+				<BinaryString name="Tags"></BinaryString>
 				<float name="TopParamA">-0.5</float>
 				<float name="TopParamB">0.5</float>
 				<token name="TopSurface">3</token>
@@ -221,34 +223,742 @@
 			</Properties>
 		</Item>
 	</Item>
+	<Item class="Stats" referent="RBXC4384F1BF0184EC0AD8DB5804D0C98E3">
+		<Properties>
+			<string name="Name">Stats</string>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+		<Item class="StatsItem" referent="RBXDD369A95EE5342178FFC98F1EDBC4B77">
+			<Properties>
+				<string name="Name">PerformanceStats</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBXE29667688E7D4791AC0ACE11882E0644">
+				<Properties>
+					<string name="Name">Memory</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX284951FDC753453F82F4E419B3C1031B">
+					<Properties>
+						<string name="Name">CoreMemory</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="StatsItem" referent="RBX2710B4B2EB004FA7AE29F011720117EF">
+						<Properties>
+							<string name="Name">default</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX8D13E2BE6FEE4ED886D41AEA86F63CB5">
+						<Properties>
+							<string name="Name">premain</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXFCB07E45FA8C455F9C56C2E7B1640004">
+						<Properties>
+							<string name="Name">studio/undo</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX40C6896B4E554B6EA6B8F9D4886EEB42">
+						<Properties>
+							<string name="Name">internal/Humanoid</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXAF95EFFB6B1E400AB02A9FB343824F2D">
+						<Properties>
+							<string name="Name">sound/default</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX9E89DCBAB7B541918DF59BE816E75C2D">
+						<Properties>
+							<string name="Name">pathfinding</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX5CC21A4624774DEFBA0D15437608A9BE">
+						<Properties>
+							<string name="Name">physics/step</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXDAE04DDC225647DDA9B94F62E46DBF80">
+						<Properties>
+							<string name="Name">http/curl</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXFFE9A201B3494C55910EC105BF494014">
+						<Properties>
+							<string name="Name">profiler</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXC37C84067DC245BB8101138A9AAE7D6D">
+						<Properties>
+							<string name="Name">network/replicator</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX1513F6FCE8BC481998350653F3D6CAB2">
+						<Properties>
+							<string name="Name">network/streamingGC</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX2C8C73EEE0BF406785B4B55AE6BD416D">
+						<Properties>
+							<string name="Name">network/raknet</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX0A37D01BFA244A86BFD2F7BDEE6FDECD">
+						<Properties>
+							<string name="Name">render/fonts</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXC4F53F41AC2E45B8BB0EB8C2B2DB97AC">
+						<Properties>
+							<string name="Name">render/lightgrid</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX80EB2EA7C6E345B6907FE33488306197">
+						<Properties>
+							<string name="Name">render/target</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX622FB798C7834CC08CCF196062CEA2AE">
+						<Properties>
+							<string name="Name">render/texture/local</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="StatsItem" referent="RBX7BA57D5F1B234EEC85983716E57C1E15">
+					<Properties>
+						<string name="Name">PlaceMemory</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+					<Item class="StatsItem" referent="RBX6883CE15CB0D4742ACD7A7352A84E14E">
+						<Properties>
+							<string name="Name">HttpCache</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX72E33612397545BBAC9F6CD6298080C2">
+						<Properties>
+							<string name="Name">Instances</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX1DDAA75B8D124432BFF43897E3545818">
+						<Properties>
+							<string name="Name">Signals</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX3B70DC8950E6492BA51270C29254EB18">
+						<Properties>
+							<string name="Name">LuaHeap</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXA4A4EDB3C0364F5BAA4FC2DF3DEE4C8B">
+						<Properties>
+							<string name="Name">Script</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX6022B9F4232E472CB30F1BA1ECFCCEEA">
+						<Properties>
+							<string name="Name">PhysicsCollision</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXA9DFA154B22F423E9C960B87043FD7F2">
+						<Properties>
+							<string name="Name">PhysicsParts</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX60FF897F86B64206934C187A813403AB">
+						<Properties>
+							<string name="Name">GraphicsSolidModels</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXAD7E4FB4767A42249551FFEB2B53E61A">
+						<Properties>
+							<string name="Name">GraphicsMeshParts</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXBF26F68D7EB74AE9AF466F01C94FA3BE">
+						<Properties>
+							<string name="Name">GraphicsParticles</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXD9723F0BFEB24431B46C182549E235F4">
+						<Properties>
+							<string name="Name">GraphicsParts</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX5A44BE379CD6471EAF5CD43EBDD253F6">
+						<Properties>
+							<string name="Name">GraphicsSpatialHash</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXE8D7B47C26CE47739EF8467B8286CB45">
+						<Properties>
+							<string name="Name">GraphicsTerrain</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXB70B4F10400F4F2E94257F3341C70646">
+						<Properties>
+							<string name="Name">GraphicsTexture</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX4D3E44764D074271BF8869C17AE14F65">
+						<Properties>
+							<string name="Name">GraphicsTextureCharacter</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX4CCC1D4C089D47C287CF54834B6CA2D5">
+						<Properties>
+							<string name="Name">Sounds</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXE6C455ABB7EC446A8A401D6C7605B177">
+						<Properties>
+							<string name="Name">StreamingSounds</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXFF79C6229EE14B25BB691173E8D3D5F4">
+						<Properties>
+							<string name="Name">TerrainVoxels</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBXCEF1FDFE59644111A4A507431CE0D43E">
+						<Properties>
+							<string name="Name">TerrainPhysics</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX6164633CB0974694B3F9B0C39F239FAB">
+						<Properties>
+							<string name="Name">Gui</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX71244C6764964A93A22B653CFA7AC391">
+						<Properties>
+							<string name="Name">Animation</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+					<Item class="StatsItem" referent="RBX75A9F4A9B2B4491F8B9EBA9F2CC2B84C">
+						<Properties>
+							<string name="Name">Navigation</string>
+							<BinaryString name="Tags"></BinaryString>
+						</Properties>
+					</Item>
+				</Item>
+				<Item class="StatsItem" referent="RBX3BCD1675D6374CA9AEE682F3FA8C337A">
+					<Properties>
+						<string name="Name">UntrackedMemory</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="StatsItem" referent="RBX9B31D8FB8E784B35A7637E2EDED45311">
+				<Properties>
+					<string name="Name">MaxMemory</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX5609C2B2D6B5472687430E3807B45496">
+				<Properties>
+					<string name="Name">CPU</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXDC23A23AC5B6417A89FE290F04CDC28C">
+				<Properties>
+					<string name="Name">MaxCPU</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX2A671DF5990E42CEBD631CC6ED867FDE">
+				<Properties>
+					<string name="Name">GPU</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX72764D421F3F475680F0E0A8906DA085">
+				<Properties>
+					<string name="Name">MaxGPU</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX834D6BC12C8C42D9BD2ED77ED7AA7C92">
+				<Properties>
+					<string name="Name">Physics</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX1EBE4053FAFF45E1A0149D0797D307BD">
+				<Properties>
+					<string name="Name">MaxPhysics</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX4383499C39BA4C6FB969232A7559A5A5">
+				<Properties>
+					<string name="Name">NetworkReceived</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX03C20E2CAFB140FCB312BB75FFD46DAD">
+				<Properties>
+					<string name="Name">MaxNetworkReceived</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXE4BE433A08104DEBB99B2B4DE8F8C9DD">
+				<Properties>
+					<string name="Name">NetworkSent</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXD751E9138A754DDC921AF5FFF58AE4DF">
+				<Properties>
+					<string name="Name">MaxNetworkSent</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBXBA0CC324D2E74947AAD5760FB222D1EE">
+			<Properties>
+				<string name="Name">Workspace</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBX33FEAC76FF85433A9DEF1B58CC061341">
+				<Properties>
+					<string name="Name">FPS</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX67C1EA38AE684CE1BA622220F2BBE690">
+				<Properties>
+					<string name="Name">Heartbeat</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX153C302482BD4026807FCB5ADDD22E0D">
+				<Properties>
+					<string name="Name">Environment Speed %</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXC15B6AE0B0934A2A9EDD9AFA0DEB1C04">
+				<Properties>
+					<string name="Name">World</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX2BC08D3CE9E644AEB455DB7183E76283">
+					<Properties>
+						<string name="Name">Primitives</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX2D7D513CB7C442FBB1D15AA8E7DDE898">
+					<Properties>
+						<string name="Name">Joints</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXF2E27EAFED124B6EA065FB4FFF0582AF">
+					<Properties>
+						<string name="Name">Contacts</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="StatsItem" referent="RBX42BD62166B4F4CA595AB1DC7C672E4CA">
+				<Properties>
+					<string name="Name">Contacts</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX23FFFC03A352482D98B2A060F9D734E3">
+					<Properties>
+						<string name="Name">CtctStageCtcts</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX7B4A5D259DDE4992A339FD439EE0E7A1">
+					<Properties>
+						<string name="Name">SteppingCtcts</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX43784FA70857463C972DDFD441E0343B">
+					<Properties>
+						<string name="Name">TouchingCtcts</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXD10D7339AC9241B6982F2D04A564D4DF">
+					<Properties>
+						<string name="Name">MaxTreeDepth</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXC17739D10B574D93923C7558D75CC038">
+					<Properties>
+						<string name="Name"># link(p)</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX1945A1A713E0485788C44DAECCDE49DD">
+					<Properties>
+						<string name="Name">Hash Nodes Out</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX0C1B642A9FCE45A3ABCF1E1FAC55ED94">
+					<Properties>
+						<string name="Name">Max Bucket Size</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="StatsItem" referent="RBX2377C83E2A094A5789CC58B3DA2A0ED7">
+				<Properties>
+					<string name="Name">Kernel</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX10C092B6FA874475839F5E92F08FEC8D">
+					<Properties>
+						<string name="Name">SolverIterations</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXA5AC5A34AEBB47249AF00FBC0EF2CBC0">
+					<Properties>
+						<string name="Name">MatrixSize</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXD6F7BCDC2E714BFD99D76B9BBC998AFA">
+					<Properties>
+						<string name="Name">Bodies</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXF6689ECE79DA4C709EB0FAF8962BEF27">
+					<Properties>
+						<string name="Name">Constraints</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX7DB8C4672E504EBA821CA6C790EBDDAC">
+					<Properties>
+						<string name="Name">Points</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="StatsItem" referent="RBXB108DC3A3D194264B0826EDCA680B9F0">
+				<Properties>
+					<string name="Name">File Operations</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX5B31E4706561442E8F5F994BB378966B">
+					<Properties>
+						<string name="Name">Total Load Time</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX0D6963C8ED7F49998FA210CE2C899632">
+					<Properties>
+						<string name="Name">SyncHttpGet Time</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX09FB3D413649404892FA683245E3238D">
+					<Properties>
+						<string name="Name">XML Load Time</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBXD518100D117243F2A0733A7B5209AF98">
+					<Properties>
+						<string name="Name">Join All Time</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBXE9E2B1456FA04584BC2EAE1E965B9BF0">
+			<Properties>
+				<string name="Name">Sound</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBXA0FBB10A96D648EF932CAA9794911A59">
+				<Properties>
+					<string name="Name">CPU</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX230F4546E4ED4A5989699B3CB59AF2F0">
+					<Properties>
+						<string name="Name">Dsp</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX3B0DC0229B4C435084230A6CD358E11C">
+					<Properties>
+						<string name="Name">Stream</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX7C7A13D447DC48AE95500B0D59E4F4D3">
+					<Properties>
+						<string name="Name">Geometry</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+				<Item class="StatsItem" referent="RBX9681FAA7A74D4303BEF23A82B8014915">
+					<Properties>
+						<string name="Name">Update</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+			<Item class="StatsItem" referent="RBXB0DAE9D16BE44F14BBAB0E4CC3066203">
+				<Properties>
+					<string name="Name">ChannelsPlaying</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXB462FB4601FF47FFA2F88C8C4C307986">
+				<Properties>
+					<string name="Name">Current</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX1D39E260636A45C7A521DCE439D4DEC4">
+				<Properties>
+					<string name="Name">Max</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX795FE0B28F5B498AA7E6F34BE164428D">
+				<Properties>
+					<string name="Name"># Sounds</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXB934A6BD06B543239C35E9C7A84837CB">
+				<Properties>
+					<string name="Name"># Unused</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBX52E6DFFCABD348E0B96032EB57AF102F">
+			<Properties>
+				<string name="Name">HttpQueue_ContentProvider</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBX8D778471FFE6451297A1C35D721684A1">
+				<Properties>
+					<string name="Name">Average time in queue</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXEED8C2DC93004FB695F94FEBCB96CE6B">
+				<Properties>
+					<string name="Name">Average process time</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX0F98BB3C383944359630018F74FAB23B">
+				<Properties>
+					<string name="Name">Queue size</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXA3F070E5DFFB4D9EB8CD1A08A1C96CEB">
+				<Properties>
+					<string name="Name">Num slow requests</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBX05DF87AE01BA48A6A654DF6CBFD02A4C">
+			<Properties>
+				<string name="Name">ChangeHistory</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBX0C45F28E60234AA99FDB2E0CFEB5DC47">
+				<Properties>
+					<string name="Name">Data Size</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX7C16D7BBA1F54CEA95E70D66C3ABD68D">
+				<Properties>
+					<string name="Name">Stack Size</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBX4F9DFF31FA0648E2A0D0732D5164830F">
+			<Properties>
+				<string name="Name">Lua</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBX60537FD6826A4D018C3E2D000AF9E9A3">
+				<Properties>
+					<string name="Name">disabled</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXACCE57FF42104A4ABB60DAD859EE7CC9">
+				<Properties>
+					<string name="Name">threads</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXB673C6FC90C744B2BA909C7BE76C059C">
+				<Properties>
+					<string name="Name">ThreadsResumed</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="RunningAverageItemDouble" referent="RBXB1FFE84BB49A45C09708737E10177DBB">
+				<Properties>
+					<string name="Name">ThreadsThrottled</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX81FD7EBF433A42798740511E9C903639">
+				<Properties>
+					<string name="Name">AverageGcInterval</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBXAE03B6A5136B443FA382A0F166EEB812">
+				<Properties>
+					<string name="Name">AverageGcTime</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBXE87DD4FA05B34AAEBB9E784411CCC408">
+			<Properties>
+				<string name="Name">FrameRateManager</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBX19D6CC27F3494DFFA3860F180B83EB3E">
+				<Properties>
+					<string name="Name">QualityLevel</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX3D8EFF6A21094336A720385D64A387A4">
+				<Properties>
+					<string name="Name">AutoQuality</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX13817EC4A3DD46BE9695F1926FE31DFE">
+				<Properties>
+					<string name="Name">NumberOfSettles</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX81D33C49B8404121846C759AD31DAC10">
+				<Properties>
+					<string name="Name">AverageSwitches</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+			<Item class="StatsItem" referent="RBX64A9F8FCF301450FB5DF7389015911A4">
+				<Properties>
+					<string name="Name">AverageFPS</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+			</Item>
+		</Item>
+		<Item class="StatsItem" referent="RBXEC90C5B2DA054AC8BA141531D6704E78">
+			<Properties>
+				<string name="Name">Render</string>
+				<BinaryString name="Tags"></BinaryString>
+			</Properties>
+			<Item class="StatsItem" referent="RBXFC232A0AD7224A7481C4224108AFF83A">
+				<Properties>
+					<string name="Name">Memory</string>
+					<BinaryString name="Tags"></BinaryString>
+				</Properties>
+				<Item class="StatsItem" referent="RBX3CDA34A8F4AC4AF9A497280760F552EF">
+					<Properties>
+						<string name="Name">Video</string>
+						<BinaryString name="Tags"></BinaryString>
+					</Properties>
+				</Item>
+			</Item>
+		</Item>
+	</Item>
 	<Item class="SoundService" referent="RBX7FC09FC1A34A45B193DAD62FEDFE7A2C">
 		<Properties>
 			<token name="AmbientReverb">0</token>
 			<float name="DistanceFactor">3.32999992</float>
 			<float name="DopplerScale">1</float>
 			<string name="Name">Soundscape</string>
+			<bool name="RespectFilteringEnabled">false</bool>
 			<float name="RolloffScale">1</float>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="NonReplicatedCSGDictionaryService" referent="RBX5E36BA650C6B4BAA81AF874D9A0AC245">
 		<Properties>
 			<string name="Name">NonReplicatedCSGDictionaryService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="CSGDictionaryService" referent="RBX1658F72104FC4119BB0B2EB2F494FACD">
 		<Properties>
 			<string name="Name">CSGDictionaryService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="Chat" referent="RBX1E2F11787ED647B6A85B25D1A4C4AF36">
 		<Properties>
 			<bool name="LoadDefaultChat">true</bool>
 			<string name="Name">Chat</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="TimerService" referent="RBX3E65D11377784A5CB6CDA36B9541A4DC">
 		<Properties>
 			<string name="Name">Instance</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="Players" referent="RBXA0727D2517AC402A815FB351B0F46FB4">
@@ -257,16 +967,19 @@
 			<int name="MaxPlayersInternal">12</int>
 			<string name="Name">Players</string>
 			<int name="PreferredPlayersInternal">56832</int>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="ReplicatedFirst" referent="RBX5DCFD2180FB3483B91E5C1B85D191462">
 		<Properties>
 			<string name="Name">ReplicatedFirst</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="TweenService" referent="RBXEF328D1504824A8283CB8B7EC338DC72">
 		<Properties>
 			<string name="Name">TweenService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="StarterPlayer" referent="RBX3E6B945975864F06A6561956332721A0">
@@ -285,10 +998,12 @@
 			<bool name="LoadCharacterAppearance">true</bool>
 			<string name="Name">StarterPlayer</string>
 			<float name="NameDisplayDistance">100</float>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 		<Item class="StarterPlayerScripts" referent="RBX842513858D634AFBAE3E44AD9D8AB7E3">
 			<Properties>
 				<string name="Name">StarterPlayerScripts</string>
+				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 			<Item class="LocalScript" referent="RBXFFFFEFC073634956823DDA838DDC8629">
 				<Properties>
@@ -299,19 +1014,22 @@
 					<ProtectedString name="Source"><![CDATA[local test = require(game.ReplicatedStorage:WaitForChild("RbxRPC")).getClientApi(require(game.ReplicatedStorage:WaitForChild("TestCommon")))
 
 print("client loaded: ", test.foo(4), test.bar(5), test.baz(6))
-]]></ProtectedString>
+test.quz(24)]]></ProtectedString>
+					<BinaryString name="Tags"></BinaryString>
 				</Properties>
 			</Item>
 		</Item>
 		<Item class="StarterCharacterScripts" referent="RBXCF72AFBA2CFD421F966A858535E98E84">
 			<Properties>
 				<string name="Name">StarterCharacterScripts</string>
+				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
 	</Item>
 	<Item class="StarterPack" referent="RBX88990F3C80C349A9B503BD225F386B10">
 		<Properties>
 			<string name="Name">StarterPack</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="StarterGui" referent="RBX00B2BFB84E1546B4AECC0B2AAE7305ED">
@@ -320,31 +1038,37 @@ print("client loaded: ", test.foo(4), test.bar(5), test.baz(6))
 			<bool name="ResetPlayerGuiOnSpawn">true</bool>
 			<token name="ScreenOrientation">2</token>
 			<bool name="ShowDevelopmentGui">true</bool>
+			<BinaryString name="Tags"></BinaryString>
+		</Properties>
+	</Item>
+	<Item class="LocalizationService" referent="RBX4C79EAD75EA34866BEE5631A9FE88DB8">
+		<Properties>
+			<string name="Name">LocalizationService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="TeleportService" referent="RBX8C7012A3CCFC4BBAB4E083B95722CAEC">
 		<Properties>
 			<string name="Name">Teleport Service</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="CollectionService" referent="RBX858ADB0CA948412F87A0F99BBBD50DD0">
 		<Properties>
 			<string name="Name">CollectionService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="PhysicsService" referent="RBX1C36FCF42DD44483A273BF6534A176B3">
 		<Properties>
 			<string name="Name">PhysicsService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="Geometry" referent="RBXC0908A48F2C94CED85CC762721953572">
 		<Properties>
 			<string name="Name">Geometry</string>
-		</Properties>
-	</Item>
-	<Item class="RenderHooksService" referent="RBXF8475A239F8E4178B9ACEC2BF3D32944">
-		<Properties>
-			<string name="Name">RenderHooksService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="InsertService" referent="RBXD4BC8C7368D04CB18BBA6E20B17B61F3">
@@ -352,58 +1076,69 @@ print("client loaded: ", test.foo(4), test.bar(5), test.baz(6))
 			<bool name="AllowClientInsertModels">false</bool>
 			<bool name="AllowInsertFreeModels">false</bool>
 			<string name="Name">InsertService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="GamePassService" referent="RBXD50DCF6F263A40F2B5B5F1970A8B9512">
 		<Properties>
 			<string name="Name">GamePassService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="Debris" referent="RBX3498EC3C3316463CB6E27B040A38672F">
 		<Properties>
 			<int name="MaxItems">1000</int>
 			<string name="Name">Debris</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="CookiesService" referent="RBXC9FFD5BD2A1845D7BFE06EA2958BA4CB">
 		<Properties>
 			<string name="Name">CookiesService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="VRService" referent="RBX7DD89E4E916B460EAF3193AD02011336">
 		<Properties>
 			<string name="Name">VRService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="ContextActionService" referent="RBX676F85A75E5C49C4BCF6AE5C30D89008">
 		<Properties>
 			<string name="Name">ContextActionService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="ScriptService" referent="RBX88E81C6C52A94F71B269B29BC435358B">
 		<Properties>
 			<string name="Name">Instance</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="AssetService" referent="RBX2279921DB2EC40CA8BF3D991E211385B">
 		<Properties>
 			<string name="Name">AssetService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="TouchInputService" referent="RBX4539780F95EE44BAB814CBF055110B03">
 		<Properties>
 			<string name="Name">TouchInputService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="Selection" referent="RBX9B32F4981ACF4B4586946A49318BE117">
 		<Properties>
 			<string name="Name">Selection</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="ServerScriptService" referent="RBX19E4766AD60B4E738FB92F14E69D5641">
 		<Properties>
 			<bool name="LoadStringEnabled">false</bool>
 			<string name="Name">ServerScriptService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 		<Item class="Script" referent="RBXB6321075C4A949CD86FD13960C6EA3E9">
 			<Properties>
@@ -422,18 +1157,22 @@ onJoin = function()
 	end
 	delay(1, onJoin)
 end
-spawn(onJoin)]]></ProtectedString>
+spawn(onJoin)
+test.quz(42)]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
 	</Item>
 	<Item class="ServerStorage" referent="RBXE1735EDD106A4E08AE1B89E4296376EB">
 		<Properties>
 			<string name="Name">ServerStorage</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="ReplicatedStorage" referent="RBXF813500BA6D24E79A3A3858A3309F0EE">
 		<Properties>
 			<string name="Name">ReplicatedStorage</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 		<Item class="ModuleScript" referent="RBXE88356EC0D684E61B605B3E35DEAE882">
 			<Properties>
@@ -469,11 +1208,14 @@ spawn(onJoin)]]></ProtectedString>
 -- "server" - A table, like the kind you would return from a ModuleScript, of server-side functions.
 -- Note that you are passed in an extra argument in the front, which is the client who called the
 -- function, or nil if it was called from the server.
+-- "clientOnly" - Like "client", but these functions cannot be called by the server at all.
+-- "serverOnly" - Like "server", but these functions cannot be called by clients at all. They do not take
+-- an extra argument like normal server functions do.
 -- "common" - A table, like the kind you would return from a ModuleScript, of functions that do not need
 -- to be handled specially by RbxRPC.
 -- 
--- Note that the client, server, and common tables can have sub-tables; they will be merged together
--- as you would expect.
+-- All of these fields are optional. Note that the client, server, and common tables can have sub-tables;
+-- they will be merged together as you would expect.
 -- 
 -- getClientApi returns the API, merged together, that should be used only by clients. getServerApi does
 -- the same thing for the server-side code. So now, after calling the correct get*Api function, you can
@@ -618,10 +1360,11 @@ function rpc.getClientApi(apiFunc)
 	local apiFolder = script:WaitForChild(rawApi.name)
 	
 	-- populate the table
-	api = clientCreateServer(rawApi.server, apiFolder, api)
-	api = clientCreateClient(rawApi.client, apiFolder, api)
+	api = clientCreateServer(rawApi.server or {}, apiFolder, api)
+	api = clientCreateClient(rawApi.client or {}, apiFolder, api)
 	
-	api = mergeTables(api, rawApi.common)
+	api = mergeTables(api, rawApi.clientOnly or {})
+	api = mergeTables(api, rawApi.common or {})
 	clientCache[apiFunc] = api
 	return api
 end
@@ -645,16 +1388,18 @@ function rpc.getServerApi(apiFunc)
 	end
 	
 	-- populate the table
-	api = serverCreateServer(rawApi.server, apiFolder, api)
-	api = serverCreateClient(rawApi.client, apiFolder, api)
+	api = serverCreateServer(rawApi.server or {}, apiFolder, api)
+	api = serverCreateClient(rawApi.client or {}, apiFolder, api)
 	
-	api = mergeTables(api, rawApi.common)
+	api = mergeTables(api, rawApi.serverOnly or {})
+	api = mergeTables(api, rawApi.common or {})
 	serverCache[apiFunc] = api
 	return api
 end
 
 return rpc
 ]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
 		<Item class="ModuleScript" referent="RBX19F4629FFBBC4C83BC5CE874D733D65C">
@@ -666,6 +1411,9 @@ return rpc
 	local client = {}
 	local server = {}
 	local common = {}
+	
+	local serverOnly = {}
+	local clientOnly = {}
 	
 	function client.foo(x)
 		print("CLIENT: foo called from server with", x)
@@ -681,25 +1429,40 @@ return rpc
 		return 3
 	end
 	
+	function clientOnly.quz(x)
+		print("CLIENT: quz called with", x)
+		return 4
+	end
+	
+	function serverOnly.quz(x)
+		print("SERVER: quz called with", x)
+		return 5
+	end
+	
 	return {
 		name = "Testerino", 
 		client = client, 
 		server = server, 
 		common = common,
+		serverOnly = serverOnly,
+		clientOnly = clientOnly,
 	}
 end]]></ProtectedString>
+				<BinaryString name="Tags"></BinaryString>
 			</Properties>
 		</Item>
 	</Item>
 	<Item class="LuaWebService" referent="RBXBDE15BBC0BE9488D955163ED9F244032">
 		<Properties>
 			<string name="Name">Instance</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="HttpService" referent="RBXF303E678C325459EBED0ADBB96A1177B">
 		<Properties>
 			<bool name="HttpEnabled">false</bool>
 			<string name="Name">HttpService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 	<Item class="Lighting" referent="RBX12318D53E77B45EEA9590D6CC6C73B08">
@@ -716,12 +1479,14 @@ end]]></ProtectedString>
 			<string name="Name">Lighting</string>
 			<Color3 name="OutdoorAmbient">4286611584</Color3>
 			<bool name="Outlines">true</bool>
+			<BinaryString name="Tags"></BinaryString>
 			<string name="TimeOfDay">14:00:00</string>
 		</Properties>
 	</Item>
-	<Item class="GamepadService" referent="RBX603739D971F14591B5C205B74FB88A8B">
+	<Item class="GamepadService" referent="RBX8365C89033764B8F9D7ED919EADC32D7">
 		<Properties>
 			<string name="Name">GamepadService</string>
+			<BinaryString name="Tags"></BinaryString>
 		</Properties>
 	</Item>
 </roblox>

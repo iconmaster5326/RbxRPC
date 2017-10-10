@@ -27,8 +27,10 @@ returned by apiFunc is a map, with string keys and values as follows:
 * "client" - A table, like the kind you would return from a ModuleScript, of client-side functions.
 * "server" - A table, like the kind you would return from a ModuleScript, of server-side functions. Note that you are passed in an extra argument in the front, which is the client who called the function, or nil if it was called from the server.
 * "common" - A table, like the kind you would return from a ModuleScript, of functions that do not need to be handled specially by RbxRPC.
+* "clientOnly" - Like "client", but these functions cannot be called by the server at all.
+* "serverOnly" - Like "server", but these functions cannot be called by clients at all. They do not take an extra argument like normal server functions do.
 
-Note that the client, server, and common tables can have sub-tables; they will be merged together
+All of these fields are optional. Note that the client, server, and common tables can have sub-tables; they will be merged together
 as you would expect.
 
 getClientApi returns the API, merged together, that should be used only by clients. getServerApi does

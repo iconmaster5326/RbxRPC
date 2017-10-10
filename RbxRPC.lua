@@ -27,6 +27,9 @@
 -- "server" - A table, like the kind you would return from a ModuleScript, of server-side functions.
 -- Note that you are passed in an extra argument in the front, which is the client who called the
 -- function, or nil if it was called from the server.
+-- "clientOnly" - Like "client", but these functions cannot be called by the server at all.
+-- "serverOnly" - Like "server", but these functions cannot be called by clients at all. They do not take
+-- an extra argument like normal server functions do.
 -- "common" - A table, like the kind you would return from a ModuleScript, of functions that do not need
 -- to be handled specially by RbxRPC.
 -- 
@@ -176,10 +179,11 @@ function rpc.getClientApi(apiFunc)
 	local apiFolder = script:WaitForChild(rawApi.name)
 	
 	-- populate the table
-	api = clientCreateServer(rawApi.server, apiFolder, api)
-	api = clientCreateClient(rawApi.client, apiFolder, api)
+	api = clientCreateServer(rawApi.server or {}, apiFolder, api)
+	api = clientCreateClient(rawApi.client or {}, apiFolder, api)
 	
-	api = mergeTables(api, rawApi.common)
+	api = mergeTables(api, rawApi.clientOnly or {})
+	api = mergeTables(api, rawApi.common or {})
 	clientCache[apiFunc] = api
 	return api
 end
@@ -203,10 +207,11 @@ function rpc.getServerApi(apiFunc)
 	end
 	
 	-- populate the table
-	api = serverCreateServer(rawApi.server, apiFolder, api)
-	api = serverCreateClient(rawApi.client, apiFolder, api)
+	api = serverCreateServer(rawApi.server or {}, apiFolder, api)
+	api = serverCreateClient(rawApi.client or {}, apiFolder, api)
 	
-	api = mergeTables(api, rawApi.common)
+	api = mergeTables(api, rawApi.serverOnly or {})
+	api = mergeTables(api, rawApi.common or {})
 	serverCache[apiFunc] = api
 	return api
 end
